@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Cascarones</title>
+  <base href="/cascarones/">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+  <meta name="google" content="notranslate">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons&display=block" rel="stylesheet">
+  <link href="/assets/vendors/fontawesome/css/all.css" rel="stylesheet">
+  <script>
+    
+    function handleVerticalUnit(){
+      let vh = window.innerHeight * 0.01;
+      console.info('synap_vh: '+vh);
+      document.documentElement.style.setProperty('--synap_vh', `${vh}px`);
+    }
+
+    function initVerticalUnit(){
+      handleVerticalUnit();
+      window.addEventListener('resize', () => {
+        handleVerticalUnit();
+      });
+    }
+    initVerticalUnit();
+  </script>
+<link rel="stylesheet" href="styles.9ad3e7b246a81f09a24a.css"></head>
+<body>
+  <app-root></app-root>
+<script src="runtime-es2015.b1903147ce22a088a6a7.js" type="module"></script><script src="polyfills-es2015.5728f680576ca47e99fe.js" type="module"></script><script src="runtime-es5.ba9c75dac6de421c0f98.js" nomodule></script><script src="polyfills-es5.7f43b971448d2fb49202.js" nomodule></script><script src="main-es2015.c39f0b6f8b2dc99fd770.js" type="module"></script><script src="main-es5.b9f99edaa79b3f1db99a.js" nomodule></script></body>
+</html>
