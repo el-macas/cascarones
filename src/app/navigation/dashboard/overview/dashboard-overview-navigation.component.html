@@ -1,0 +1,33 @@
+<div class="contents">
+  <div class="top-bar">
+    <img src="/assets/img/gear.svg">
+  </div>
+  <mat-tab-group (selectedTabChange)="onTabChange($event.index)">
+    <mat-tab *ngFor="let casca of cascas" [label]="casca.name">
+      <div class="casca-picture">
+        <img [src]="'/assets/img/' + casca.photo"/>
+      </div>
+      <div class="casca-whatsapp">
+        <img src="/assets/img/whatsapp.png"/> <div>{{casca.whatsappNumber}}</div>
+      </div>
+      <div class="casca-text">
+        {{casca.text}}
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+</div>
+
+<div class="navigation-menu">
+  <div class="navigation-menu-item">
+    <img src="/assets/img/pay.svg" (click)="xyz()">
+    <div class="navigation-menu-item-text">
+      accion 1
+    </div>
+  </div>
+  <div class="navigation-menu-item">
+    <img src="/assets/img/pay.svg" (click)="xyz()">
+    <div class="navigation-menu-item-text">
+      accion 2
+    </div>
+  </div>
+</div>

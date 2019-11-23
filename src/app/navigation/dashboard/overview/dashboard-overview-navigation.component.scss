@@ -1,0 +1,175 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 100synap_vh; /* Fallback for browsers that do not support Custom Properties */
+  height: calc(var(--synap_vh, 1synap_vh) * 100);
+}
+
+::ng-deep .mat-tab-body.mat-tab-body-active {
+  padding: 20px;
+}
+
+button.add-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 100;
+}
+
+mat-carousel {
+  margin-top: 20px;
+}
+
+.loader {
+  width: 100%;
+  text-align: center;
+  padding: 24px 0;
+}
+
+.navigation-menu {
+  padding: 12px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: white;
+  align-self: flex-end;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navigation-menu-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navigation-menu-item > img {
+  width: 48px;
+  height: auto;
+}
+
+.navigation-menu-item-text {
+  margin-top: 4px;
+  text-align: center;
+}
+
+.top-bar {
+  padding: 16px 16px 0 0;
+}
+
+.top-bar > img {
+  width: 24px;
+  height: auto;
+  float: right;
+}
+
+.contents {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 1;
+}
+
+.tabs {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.tabs-selection {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 8px;
+}
+
+.tab-selection-item {
+  padding: 4px 18px;
+  margin: 0 12px;
+  color: #777;
+  border-bottom: 4px solid transparent;
+}
+
+.tab-selection-item:hover, .tab-selection-item.active {
+  border-bottom: 4px solid #94ba32;
+}
+
+.tabs-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.label {
+  color: #333;
+  font-size: 14px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.transaction {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 10px;
+  color: #333;
+}
+
+.transaction > .descripcion {
+  flex: 1;
+  color: #777;
+  font-size: 16px;
+}
+
+.transaction > .descripcion > div:nth-child(2) {
+  /*padding-top: 4px;*/
+  font-size: 12px;
+}
+
+.casca-picture {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+  img {
+    height: 128px;
+  }
+  margin-bottom: 12px;
+}
+
+.casca-whatsapp {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  img {
+    height: 32px;
+  }
+  font-size: 18px;
+  font-weight: bolder;
+  div {
+    line-height: 32px;
+  }
+}
+
+.navigation-menu-item {
+  visibility: hidden;
+}
+
+.casca-proofs {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 12px;
+}

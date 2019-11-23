@@ -1,0 +1,95 @@
+@import 'layout/layout';
+html{
+    color: rgb(34, 37, 43);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+mat-carousel .carousel {
+    height: 150px;
+}
+.account-data {
+    height: 135px;
+    box-sizing: border-box;
+    padding: 25px !important;
+    position: relative;
+    padding-top: 30px !important;
+    .brand-logo {
+        width: 110px;
+        height: 20px;
+        margin-bottom: 10px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        &.INBK{
+            background-image: url('/assets/img/brands/interbank-logo.svg');
+        }
+        &.BNCP{
+            background-image: url('/assets/img/brands/bcp-logo.svg');
+        }
+        &.BBVA{
+            background-image: url('/assets/img/brands/bbva-logo.svg');
+        }
+        &.VISA{
+            background-image: url('/assets/img/brands/visa-logo.png');
+        }
+        &.MSCD{
+            background-position-y: -11px;
+            background-size: 56%;
+            background-position-x: -14px;
+            background-image: url('/assets/img/brands/mastercard-logo.png');
+        }
+    }
+    .amount, .legend {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        text-align: right;
+        padding-top: 80px;
+        padding-right: 26px;
+        box-sizing: border-box;
+    }
+    .amount{
+        font-size: 25px !important;
+    }
+    .legend{
+        padding-top: 100px;
+    }
+}
+
+.account.mat-elevation-z1 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.account-data {
+    box-sizing: border-box;
+}
+.account-data .ecommerce-title {
+    font-size: 24px !important;
+}
+
+.account-data .order-amount,
+.account-data .order-discount {
+    position: absolute;
+    width: 100%;
+    text-align: right;
+    box-sizing: border-box;
+    top: 0px;
+    left: 0px;
+    padding: 50px 30px;
+    font-size: 16px !important;
+}
+.account-data .order-discount{
+    padding-top: 75px;
+    
+}
+.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+    background-color: #94ba32;
+}
+.transaction .transaction-title {
+    font-size: 21px !important;
+}
+.transaction-amount-row .amount-value {
+    font-size: 21px !important;
+}

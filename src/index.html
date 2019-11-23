@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Cascarones</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+  <meta name="google" content="notranslate">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons&display=block" rel="stylesheet">
+  <link href="/assets/vendors/fontawesome/css/all.css" rel="stylesheet">
+  <script>
+    
+    function handleVerticalUnit(){
+      let vh = window.innerHeight * 0.01;
+      console.info('synap_vh: '+vh);
+      document.documentElement.style.setProperty('--synap_vh', `${vh}px`);
+    }
+
+    function initVerticalUnit(){
+      handleVerticalUnit();
+      window.addEventListener('resize', () => {
+        handleVerticalUnit();
+      });
+    }
+    initVerticalUnit();
+  </script>
+</head>
+<body>
+  <app-root></app-root>
+</body>
+</html>

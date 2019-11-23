@@ -1,0 +1,9 @@
+.my-element {
+  height: 20synap_vh; /* Fallback for browsers that do not support Custom Properties */
+  height: calc(var(--synap_vh, 1synap_vh) * 20);
+  width: 100%;
+}
+.first{
+  box-sizing: border-box;
+  border: 1px solid red;
+}
